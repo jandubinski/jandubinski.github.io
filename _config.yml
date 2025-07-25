@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Jan Dubiński
+title                    : "Jan Dubiński"
 title_separator          : "-"
 name                     : &name "Jan Dubiński"
 description              : &description "My researcher page"
