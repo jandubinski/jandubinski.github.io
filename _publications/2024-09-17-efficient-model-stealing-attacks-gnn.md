@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2024-09-17-efficient-model-stealing-attacks-gnn
 excerpt: 'We presents efficient model‑stealing attacks tailored to inductive graph neural networks.'
-date: 2024
+date: 2024-09-17
 venue: 'European Conference on Artificial Intelligence (ECAI)'
 paperurl: 'https://arxiv.org/abs/2405.12295'
 citation: 'Podhajski, M., Dubiński, J., Boenisch, F., Dziedzic, A., Pregowska, A., & Michalak, T. P. (2024). "Efficient Model-Stealing Attacks Against Inductive Graph Neural Networks." In ECAI 2024 (pp. 1438–1445).'

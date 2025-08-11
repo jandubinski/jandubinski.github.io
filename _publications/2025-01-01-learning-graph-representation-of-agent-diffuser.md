@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2025-01-01-learning-graph-representation-of-agent-diffuser
 excerpt: 'We present LGR-AD, a multi-agent diffusion framework where expert sub-models coordinate through a learned graph, enabling dynamic adaptation during generation and outperforming standard diffusion models in accuracy and diversity.'
-date: 2025
+date: 2025-01-01
 venue: 'International Conference on Autonomous Agents and Multiagent Systems (AAMAS)'
 paperurl: 'https://arxiv.org/abs/2505.06761'
 citation: 'Djenouri, Y., Belmecheri, N., Michalak, T., Dubiński, J., Belbachir, A. N., & Yazidi, A. (2025). "Learning Graph Representation of Agent Diffuser." In AAMAS 2025.'

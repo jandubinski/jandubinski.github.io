@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2022-11-22-selectively-increasing-the-diversity-of-gan-generated-samples
 excerpt: 'We propose a simple regularizer that selectively increases the diversity of GAN outputs where variety is desired,'
-date: 2022
+date: 2022-11-22
 venue: 'International Conference on Neural Information Processing (ICONIP)'
 paperurl: 'https://arxiv.org/abs/2207.01561'
 citation: 'Dubiński, J., Deja, K., Wenzel, S., Rokita, P., & Trzciński, T. (2022). "Selectively Increasing the Diversity of GAN-generated Samples." In ICONIP 2022 (pp. 260–270).'

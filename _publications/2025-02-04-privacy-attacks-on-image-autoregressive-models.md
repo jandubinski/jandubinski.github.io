@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2025-02-04-privacy-attacks-on-image-autoregressive-models
 excerpt: 'We show that image autoregressive models are empirically less private than diffusion models. We introduce the first membership inference attack tailored to IARs, and execute membership inference, dataset inference, and sample extraction to reveal their vulnerability.'
-date: 2025
+date: 2025-02-04
 venue: 'International Conference on Machine Learning (ICML)'
 paperurl: 'https://arxiv.org/abs/2502.02514'
 citation: 'Kowalczuk, A., Dubiński, J., Boenisch, F., & Dziedzic, A. (2025). "Privacy Attacks on Image Autoregressive Models." In ICML 2025.'

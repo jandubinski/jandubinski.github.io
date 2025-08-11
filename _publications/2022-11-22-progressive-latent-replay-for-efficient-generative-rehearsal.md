@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2022-11-22-progressive-latent-replay-for-efficient-generative-rehearsal
 excerpt: 'We reduce the cost of generative rehearsal for continual learning by modulating the frequency of rehearsal based on the depth of the network.'
-date: 2022
+date: 2022-11-22
 venue: 'International Conference on Neural Information Processing (ICONIP)'
 paperurl: 'https://arxiv.org/abs/2207.01562'
 citation: 'Pawlak, S., Szatkowski, F., Bortkiewicz, M., Dubiński, J., & Trzciński, T. (2022). "Progressive Latent Replay for Efficient Generative Rehearsal." In ICONIP 2022 (pp. 457–467).'

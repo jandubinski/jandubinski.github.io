@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2024-11-19-cdi-copyrighted-data-identification
 excerpt: 'We show that existing membership inference attacks are ineffective for large diffusion models and we propose CDI, a dataset inference approach that aggregates signals across many samples to reliably detect copyrighted training data with over 99% confidence.'
-date: 2025
+date: 2025-11-19
 venue: 'Conference on Computer Vision and Pattern Recognition (CVPR)'
 paperurl: 'https://arxiv.org/abs/2411.12858'
 citation: 'Dubiński, J., Kowalczuk, A., Boenisch, F., & Dziedzic, A. (2025). "CDI: Copyrighted Data Identification in Diffusion Models." In CVPR 2025.'

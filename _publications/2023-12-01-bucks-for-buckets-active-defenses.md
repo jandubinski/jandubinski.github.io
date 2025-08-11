@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2023-12-01-bucks-for-buckets-active-defenses
 excerpt: 'B4B is an active defense against encoder model stealing.'
-date: 2023
+date: 2023-12-01
 venue: 'Advances in Neural Information Processing Systems (NeurIPS)'
 paperurl: 'https://proceedings.neurips.cc/paper_files/paper/2023/file/ad1efab57a04d93f097e7fbb2d4fc054-Paper-Conference.pdf'
 citation: 'Dubiński, J., Pawlak, S., Boenisch, F., Trzcinski, T., & Dziedzic, A. (2023). "Bucks for Buckets (B4B): Active Defenses Against Stealing Encoders." In NeurIPS 2023 (Vol. 36, pp. 55237–55259).'
