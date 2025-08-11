@@ -1,7 +1,7 @@
 ---
 title: "Bucks for Buckets (B4B): Active Defenses Against Stealing Encoders"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2023-12-01-bucks-for-buckets-active-defenses
 excerpt: 'B4B is an active defense against encoder model stealing.'
 date: 2023-12-01

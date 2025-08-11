@@ -1,7 +1,7 @@
 ---
 title: "Selectively Increasing the Diversity of GAN-generated Samples"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2022-11-22-selectively-increasing-the-diversity-of-gan-generated-samples
 excerpt: 'We propose a simple regularizer that selectively increases the diversity of GAN outputs where variety is desired,'
 date: 2022-11-22

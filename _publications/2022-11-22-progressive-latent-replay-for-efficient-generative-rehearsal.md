@@ -1,7 +1,7 @@
 ---
 title: "Progressive Latent Replay for Efficient Generative Rehearsal"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2022-11-22-progressive-latent-replay-for-efficient-generative-rehearsal
 excerpt: 'We reduce the cost of generative rehearsal for continual learning by modulating the frequency of rehearsal based on the depth of the network.'
 date: 2022-11-22

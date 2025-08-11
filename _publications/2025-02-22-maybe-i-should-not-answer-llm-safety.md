@@ -1,7 +1,7 @@
 ---
 title: "Maybe I Should Not Answer That, but… Do LLMs Understand The Safety of Their Inputs?"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2025-02-22-maybe-i-should-not-answer-llm-safety
 excerpt: 'We investigate whether LLMs implicitly encode safety information, introducing a training-free moderation method that levarages the hidden states of an LLM to detect unsafe inputs.'
 date: 2025-02-22

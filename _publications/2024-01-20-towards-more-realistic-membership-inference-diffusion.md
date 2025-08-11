@@ -1,7 +1,7 @@
 ---
 title: "Towards More Realistic Membership Inference Attacks on Large Diffusion Models"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2024-01-20-towards-more-realistic-membership-inference-diffusion
 excerpt: 'We design a fair evaluation framework for membership inference on Stable Diffusion, apply existing and new attacks, and show prior setups overestimate success while true membership detection remains difficult.'
 date: 2024-01-20

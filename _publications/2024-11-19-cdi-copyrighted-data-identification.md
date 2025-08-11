@@ -1,7 +1,7 @@
 ---
 title: "CDI: Copyrighted Data Identification in Diffusion Models"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2024-11-19-cdi-copyrighted-data-identification
 excerpt: 'We show that existing membership inference attacks are ineffective for large diffusion models and we propose CDI, a dataset inference approach that aggregates signals across many samples to reliably detect copyrighted training data with over 99% confidence.'
 date: 2025-11-19

@@ -1,7 +1,7 @@
 ---
 title: "Efficient Model-Stealing Attacks Against Inductive Graph Neural Networks"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2024-09-17-efficient-model-stealing-attacks-gnn
 excerpt: 'We presents efficient model‑stealing attacks tailored to inductive graph neural networks.'
 date: 2024-09-17
