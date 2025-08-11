@@ -66,11 +66,11 @@ Skills
 Selected Publications
 ======
 * **Privacy Attacks on Image Autoregressive Models**  
-  A. Kowalczuk\*, <u>J. Dubiński\*</u>, F. Boenisch, A. Dziedzic  
+  A. Kowalczuk\*, <u>J. Dubiński*</u>, F. Boenisch, A. Dziedzic  
   *International Conference on Machine Learning (ICML), 2025, CORE A\***
 
 * **CDI: Copyrighted Data Identification in Diffusion Models**  
-  <u>J. Dubiński\*</u>, A. Kowalczuk\*, F. Boenisch, A. Dziedzic  
+  <u>J. Dubiński*</u>, A. Kowalczuk\*, F. Boenisch, A. Dziedzic  
   *Conference on Computer Vision and Pattern Recognition (CVPR), 2025, CORE A\***
 
 * **Learning Graph Representation of Agent Diffuser**  
@@ -78,7 +78,7 @@ Selected Publications
   *International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2025, CORE A\***
 
 * **Bucks for Buckets (B4B): Active Defenses Against Stealing Encoders**  
-  <u>J. Dubiński\*</u>, S. Pawlak\*, F. Boenisch\*, T. Trzcinski, A. Dziedzic  
+  <u>J. Dubiński*</u>, S. Pawlak\*, F. Boenisch\*, T. Trzcinski, A. Dziedzic  
   *Neural Information Processing Systems (NeurIPS), 2023, CORE A\***
 
 * **Towards More Realistic Membership Inference Attacks on Large Diffusion Models**  
