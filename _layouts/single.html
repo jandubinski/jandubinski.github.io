@@ -4,41 +4,29 @@ layout: default
 
 {% include base_path %}
 
-<!-- Inline, theme-aware styles for BibTeX code blocks -->
+<!-- Inline styles for BibTeX code blocks: fixed white text on gray background, slightly smaller font -->
 <style>
-  /* Light theme */
   pre.bibtex {
-    background: #f6f8fa;
-    color: #24292e;
-    border: 1px solid #e1e4e8;
+    background: #6b7280;
+    /* medium gray */
+    color: #ffffff;
+    /* white text */
+    border: 1px solid #4b5563;
+    /* darker gray border for contrast */
     border-radius: 6px;
-    padding: 1rem;
-    overflow-x: auto;
-    font-family: Menlo, Monaco, "Courier New", monospace;
-    font-size: 0.9rem;
-    line-height: 1.4;
+    padding: 0.75rem;
     margin: 0.75rem 0 1rem 0;
+    overflow-x: auto;
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.85rem;
+    /* slightly smaller */
+    line-height: 1.35;
   }
 
   pre.bibtex code {
     color: inherit;
+    /* keep white */
     background: none;
-  }
-
-  /* OS dark mode */
-  @media (prefers-color-scheme: dark) {
-    pre.bibtex {
-      background: #0d1117;
-      color: #c9d1d9;
-      border-color: #30363d;
-    }
-  }
-
-  /* Explicit theme toggle (e.g., Minimal Mistakes) */
-  [data-theme="dark"] pre.bibtex {
-    background: #0d1117;
-    color: #c9d1d9;
-    border-color: #30363d;
   }
 </style>
 
@@ -98,8 +86,8 @@ layout: default
         {{ content }}
 
         {%- comment -%}
-        Below: replace any *bibtexurl* link variants with an inline BibTeX code block
-        using *page.bibtex*. All other logic/wording is kept intact.
+        Replaced *bibtexurl* link variants with an inline BibTeX code block using *page.bibtex*.
+        All other logic/wording is kept intact.
         {%- endcomment -%}
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtex %}
