@@ -7,5 +7,5 @@ redirect_from:
   - /about.html
 ---
 
-I work on developing safe and trustworthy artificial intelligence. My research focuses on generative models, including large language models and generative vision systems. I'm currently pursuing a PhD at the Doctoral School of Warsaw University of Technology, where I explore how to make these technologies more reliable and aligned with human values.
+I am a researcher at the NASK National Research Institute and Warsaw University of Technology, where I am pursuing a PhD. My work focuses on the safety of generative models, including both language and vision systems, exploring how to make these technologies more reliable and aligned with human values. I am currently collaborating with Owain Evans's Truthful AI as part of the Constellation Astra Fellowship. My past research includes the MARS Fellowship at the Cambridge AI Safety Hub, internships at the CISPA Helmholtz Center for Information Security and Sapienza University of Rome, and collaboration with CERN, the European Organization for Nuclear Research.
 

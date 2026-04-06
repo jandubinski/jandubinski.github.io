@@ -10,11 +10,14 @@ paperurl: 'https://arxiv.org/abs/2502.02514'
 citation: 'Kowalczuk, A., Dubiński, J., Boenisch, F., & Dziedzic, A. (2025). "Privacy Attacks on Image Autoregressive Models." In ICML 2025.'
 authors: 'A. Kowalczuk*, **J. Dubiński***, F. Boenisch, A. Dziedzic'
 bibtex: |
-  @article{kowalczuk2025privacy,
-    title={Privacy attacks on image autoregressive models},
-    author={Kowalczuk, Antoni and Dubi{\'n}ski, Jan and Boenisch, Franziska and Dziedzic, Adam},
-    journal={arXiv preprint arXiv:2502.02514},
-    year={2025}
+  @inproceedings{DBLP:conf/icml/KowalczukDBD25,
+    author       = {Antoni Kowalczuk and Jan Dubinski and Franziska Boenisch and Adam Dziedzic},
+    title        = {Privacy Attacks on Image AutoRegressive Models},
+    booktitle    = {Forty-second International Conference on Machine Learning, {ICML} 2025, Vancouver, BC, Canada, July 13-19, 2025},
+    series       = {Proceedings of Machine Learning Research},
+    publisher    = {{PMLR} / OpenReview.net},
+    year         = {2025},
+    url          = {https://proceedings.mlr.press/v267/kowalczuk25a.html},
   }
 ---
 

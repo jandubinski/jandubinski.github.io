@@ -18,7 +18,7 @@ bibtex: |
   publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
   address = {Richland, SC},
   booktitle = {Proceedings of the 24th International Conference on Autonomous Agents and Multiagent Systems},
-  pages = {620–629},
+  pages = {620--629},
   numpages = {10},
   keywords = {collaborative frameworks, graph representations of agents, text to image generation},
   location = {Detroit, MI, USA},
