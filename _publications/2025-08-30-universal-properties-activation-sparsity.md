@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-08-30-universal-properties-activation-sparsity
 excerpt: 'We introduce a general framework for evaluating sparsity robustness in modern LLMs and uncover universal properties of activation sparsity across diverse model families and scales, showing that sparsity potential grows with model size.'
-date: 2025-08-30
+date: 2026-04-23
 venue: 'International Conference on Learning Representations (ICLR)'
 paperurl: 'https://arxiv.org/abs/2509.00454'
 citation: 'Szatkowski, F., Będkowski, P., Devoto, A., Dubiński, J., Minervini, P., Piórczyński, M., Scardapane, S., & Wójcik, B. (2026). "Universal Properties of Activation Sparsity in Modern Large Language Models." In ICLR 2026.'

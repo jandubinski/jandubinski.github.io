@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-11-10-on-stealing-graph-neural-network-models
 excerpt: 'We demonstrate how an adversary can extract a GNN with very limited interactions, first obtaining the model backbone without direct queries, then strategically utilizing a fixed query limit to extract the most informative data.'
-date: 2025-11-10
+date: 2026-01-20
 venue: 'AAAI Conference on Artificial Intelligence (AAAI)'
 paperurl: 'https://arxiv.org/abs/2511.07170'
 citation: 'Podhajski, M., Dubiński, J., Boenisch, F., Dziedzic, A., Pręgowska, A., & Michalak, T. P. (2026). "On Stealing Graph Neural Network Models." In AAAI 2026.'

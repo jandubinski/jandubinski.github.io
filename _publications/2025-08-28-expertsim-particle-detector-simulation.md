@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-08-28-expertsim-particle-detector-simulation
 excerpt: 'We present ExpertSim, a Mixture-of-Generative-Experts approach for simulating the Zero Degree Calorimeter in the ALICE experiment at CERN, improving both accuracy and speed over traditional Monte Carlo methods.'
-date: 2025-08-28
+date: 2025-10-25
 venue: 'European Conference on Artificial Intelligence (ECAI)'
 paperurl: 'https://arxiv.org/abs/2508.20991'
 citation: 'Będkowski, P., Dubiński, J., Szatkowski, F., Deja, K., Rokita, P., & Trzciński, T. (2025). "ExpertSim: Fast Particle Detector Simulation Using Mixture-of-Generative-Experts." In ECAI 2025.'
