@@ -25,9 +25,9 @@ author:
   avatar           : "profile.png"
   name             : "Jan Dubiński"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Student @ Warsaw University of Technology. AI Safety / Trustworthy ML / Generative Models"
+  bio              : "PhD Student @ Warsaw University of Technology & NASK National Research Institute. AI Safety / Trustworthy ML / Generative Models"
   location         : "Warsaw, Poland"
-  employer         : "Warsaw University of Technology"
+  employer         : "Warsaw University of Technology & NASK"
   uri              : # URL
   email            : "jan.dubinski.dokt@pw.edu.pl" 
 
