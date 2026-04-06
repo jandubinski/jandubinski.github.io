@@ -12,7 +12,8 @@ redirect_from:
 Education
 ======
 * **Ph.D. in Computer Science**  
-  *Warsaw University of Technology* • Oct 2021 – Present
+  *Warsaw University of Technology* • Oct 2021 – Oct 2025 (awaiting defence)  
+  &nbsp;&nbsp;&nbsp;&nbsp;Thesis: "Reliable and Safe Generative Models"
 
 * **M.Sc. in Computer Science**  
   *Warsaw University of Technology* • Feb 2018 – Jun 2021  
@@ -31,28 +32,35 @@ Education
 
 Work experience
 ======
+* **Astra Fellow**, Constellation Institute at Berkeley, USA • Jan 2025 – Present  
+  Working with Owain Evans's TruthfulAI on safety and alignment of Large Language Models
+
+* **MARS Fellow**, Cambridge AI Safety Hub • Dec 2022 – Jan 2026  
+  Research on safety of Vision-Language Models with Yossi Gandelsman
+
 * **Senior Specialist**, NASK National Research Institute • May 2025 – Present  
   Department of Security and Transparency of Artificial Intelligence
 
 * **Visiting Researcher**, CISPA – Helmholtz Center for Information Security • Mar 2024 – May 2024  
-  Identifying use of copyrighted data in Diffusion Models
+  Working on identifying the use of copyrighted data in Diffusion Models with Adam Dziedzic
 
-* **PhD Student Researcher**, IDEAS NCBR • Oct 2023 – May 2025  
+* **PhD Student Researcher**, IDEAS NCBR • Oct 2023 – Apr 2024  
   Research in Systems Security and Data Privacy
 
-* **Collaborator**, CERN • Feb 2019 – Present  
-  Fast simulations for LHC calorimeter using GANs and VAEs
+* **Collaborator**, CERN, the European Organization for Nuclear Research • Feb 2019 – Present  
+  Fast simulations of a particle calorimeter at the Large Hadron Collider using generative adversarial networks and variational autoencoders
 
 * **Junior Machine Learning Engineer**, Samsung R&D Institute Poland • Jul 2019 – Oct 2021  
-  Development of ML systems for automatic code repair and audio quality assessment
+  Development of machine learning systems for automatic code repair
 
 * **IAESTE Internship**, National Technical University in Bahia Blanca, Argentina • Aug 2017 – Sep 2017  
   Development of grid power failure simulations
 
 Skills
 ======
-* Strong background in **deep learning**, with a focus on **generative models** and **AI safety**  
+* Strong background in **machine learning**, with a focus on **generative models** and their safety, including **Large Language Models**, **Generative Vision Models**, and **Vision-Language Models**  
 * Practical research experience across academia and international institutions  
+* Experience in frontier model adaptation and evaluation  
 * Advanced programming proficiency in **Python 3**  
 * In-depth knowledge of:
   * **Machine Learning**: PyTorch, TensorFlow, Keras  
@@ -62,9 +70,18 @@ Skills
   * **Version control**: Git  
   * **Operating systems**: Linux  
   * **Containerization**: Docker  
+* Foreign languages: English C2 (fluent), German B1, Japanese A2
 
 Selected Publications
 ======
+* **Universal Properties of Activation Sparsity in Modern Large Language Models**  
+  F. Szatkowski, P. Będkowski, A. Devoto, <u>J. Dubiński</u>, P. Minervini, M. Piórczyński, S. Scardapane, B. Wójcik  
+  *International Conference on Learning Representations (ICLR), 2026, CORE A\**
+
+* **On Stealing Graph Neural Network Models**  
+  M. Podhajski, <u>J. Dubiński</u>, F. Boenisch, A. Dziedzic, A. Pręgowska, T. Michalak  
+  *AAAI Conference on Artificial Intelligence (AAAI), 2026, CORE A\**
+
 * **Privacy Attacks on Image Autoregressive Models**  
   A. Kowalczuk\*, <u>J. Dubiński*</u>, F. Boenisch, A. Dziedzic  
   *International Conference on Machine Learning (ICML), 2025, CORE A\***
@@ -75,11 +92,11 @@ Selected Publications
 
 * **Learning Graph Representation of Agent Diffuser**  
   Y. Djenouri, N. Belmecheri, T. Michalak, <u>J. Dubiński</u>, A. N. Belbachir, A. Yazidi  
-  *International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2025, CORE A\***
+  *International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2025, CORE A\**
 
 * **Bucks for Buckets (B4B): Active Defenses Against Stealing Encoders**  
   <u>J. Dubiński*</u>, S. Pawlak\*, F. Boenisch\*, T. Trzcinski, A. Dziedzic  
-  *Neural Information Processing Systems (NeurIPS), 2023, CORE A\***
+  *Neural Information Processing Systems (NeurIPS), 2023, CORE A\**
 
 * **Towards More Realistic Membership Inference Attacks on Large Diffusion Models**  
   <u>J. Dubiński</u>, A. Kowalczuk, S. Pawlak, P. Rokita, T. Trzciński, P. Morawiecki  
@@ -97,6 +114,6 @@ Selected Publications
   S. Pawlak, F. Szatkowski, M. Bortkiewicz, <u>J. Dubiński</u>, T. Trzciński  
   *International Conference on Neural Information Processing (ICONIP), 2022, CORE A*
 
-* **Maybe I Should Not Answer That, but... Do LLMs Understand The Safety of Their Inputs?**  
+* **Efficient LLM Moderation with Multi-Layer Latent Prototypes**  
   M. Chrabąszcz, F. Szatkowski, B. Wójcik, <u>J. Dubiński</u>, T. Trzciński  
   *ICLR Workshop on Building Trust in Language Models and Applications, 2025*
