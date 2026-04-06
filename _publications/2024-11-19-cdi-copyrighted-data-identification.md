@@ -3,7 +3,7 @@ title: "CDI: Copyrighted Data Identification in Diffusion Models"
 collection: publications
 category: conferences
 permalink: /publication/2024-11-19-cdi-copyrighted-data-identification
-excerpt: 'We show that existing membership inference attacks are ineffective for large diffusion models and we propose CDI, a dataset inference approach that aggregates signals across many samples to reliably detect copyrighted training data with over 99% confidence.'
+excerpt: 'We demonstrate that existing membership inference attacks are not strong enough to reliably detect individual images in large, state-of-the-art diffusion models. To overcome this, we propose CDI, a dataset inference framework that aggregates signals from multiple data points belonging to a single owner. CDI allows data owners with as few as 70 samples to identify with over 99% confidence whether their data was used to train a given diffusion model.'
 date: 2025-06-11
 venue: 'Conference on Computer Vision and Pattern Recognition (CVPR)'
 paperurl: 'https://arxiv.org/abs/2411.12858'

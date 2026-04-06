@@ -3,7 +3,7 @@ title: "Towards More Realistic Membership Inference Attacks on Large Diffusion M
 collection: publications
 category: conferences
 permalink: /publication/2024-01-20-towards-more-realistic-membership-inference-diffusion
-excerpt: 'We design a fair evaluation framework for membership inference on Stable Diffusion, apply existing and new attacks, and show prior setups overestimate success while true membership detection remains difficult.'
+excerpt: 'We propose a methodology to establish a fair evaluation setup for membership inference attacks on large diffusion models such as Stable Diffusion. Our research reveals that previously proposed evaluation setups significantly overestimate the effectiveness of these attacks. We conclude that membership inference remains a significant challenge for large diffusion models deployed as black-box systems, indicating that related privacy and copyright issues will persist.'
 date: 2024-01-04
 venue: 'Winter Conference on Computer Vision (WACV)'
 paperurl: 'https://openaccess.thecvf.com/content/WACV2024/papers/Dubinski_Towards_More_Realistic_Membership_Inference_Attacks_on_Large_Diffusion_Models_WACV_2024_paper.pdf'

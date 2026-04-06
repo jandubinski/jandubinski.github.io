@@ -3,7 +3,7 @@ title: "Universal Properties of Activation Sparsity in Modern Large Language Mod
 collection: publications
 category: conferences
 permalink: /publication/2025-08-30-universal-properties-activation-sparsity
-excerpt: 'We introduce a general framework for evaluating sparsity robustness in modern LLMs and uncover universal properties of activation sparsity across diverse model families and scales, showing that sparsity potential grows with model size.'
+excerpt: 'Methods relying on exact zero activations do not apply to modern LLMs that use SiLU or GELU, leading to fragmented strategies and a gap in general understanding. We introduce a general framework for evaluating sparsity robustness and conduct a systematic investigation across diverse model families and scales. Our results uncover universal properties of activation sparsity, notably that the potential for effective sparsity grows with model size, and present the first study of activation sparsity in diffusion-based LLMs.'
 date: 2026-04-23
 venue: 'International Conference on Learning Representations (ICLR)'
 paperurl: 'https://arxiv.org/abs/2509.00454'

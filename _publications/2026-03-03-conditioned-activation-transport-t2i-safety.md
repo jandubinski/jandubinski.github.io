@@ -3,7 +3,7 @@ title: "Conditioned Activation Transport for T2I Safety Steering"
 collection: publications
 category: preprints
 permalink: /publication/2026-03-03-conditioned-activation-transport-t2i-safety
-excerpt: 'We propose Conditioned Activation Transport (CAT), a framework that employs geometry-based conditioning and nonlinear transport maps to steer T2I models away from unsafe content generation while preserving image quality on benign prompts.'
+excerpt: 'Current Text-to-Image models remain prone to generating unsafe content, and linear activation steering frequently degrades image quality on benign prompts. We propose Conditioned Activation Transport (CAT), a framework that employs geometry-based conditioning and nonlinear transport maps that activate only within unsafe activation regions. Validated on Z-Image and Infinity architectures, CAT significantly reduces Attack Success Rate while maintaining image fidelity compared to unsteered generations.'
 date: 2026-03-03
 venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/abs/2603.03163'

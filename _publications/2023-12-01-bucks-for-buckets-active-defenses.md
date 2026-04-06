@@ -3,7 +3,7 @@ title: "Bucks for Buckets (B4B): Active Defenses Against Stealing Encoders"
 collection: publications
 category: conferences
 permalink: /publication/2023-12-01-bucks-for-buckets-active-defenses
-excerpt: 'B4B is an active defense against encoder model stealing.'
+excerpt: 'Machine Learning as a Service APIs expose high-quality encoders that are expensive to train, making them lucrative targets for model stealing attacks. We propose Bucks for Buckets (B4B), the first active defense that prevents stealing while the attack is happening without degrading representation quality for legitimate users. B4B adaptively adjusts the utility of returned representations based on a user''s coverage of the embedding space and individually transforms each user''s representations to prevent sybil-based aggregation.'
 date: 2023-12-10
 venue: 'Advances in Neural Information Processing Systems (NeurIPS)'
 paperurl: 'https://proceedings.neurips.cc/paper_files/paper/2023/file/ad1efab57a04d93f097e7fbb2d4fc054-Paper-Conference.pdf'

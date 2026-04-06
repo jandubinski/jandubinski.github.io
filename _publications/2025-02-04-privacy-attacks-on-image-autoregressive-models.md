@@ -3,7 +3,7 @@ title: "Privacy Attacks on Image Autoregressive Models"
 collection: publications
 category: conferences
 permalink: /publication/2025-02-04-privacy-attacks-on-image-autoregressive-models
-excerpt: 'We show that image autoregressive models are empirically less private than diffusion models. We introduce the first membership inference attack tailored to IARs, and execute membership inference, dataset inference, and sample extraction to reveal their vulnerability.'
+excerpt: 'We conduct the first comprehensive privacy analysis of image autoregressive models (IARs), showing they exhibit significantly higher privacy risks than diffusion models. We develop a novel membership inference attack achieving a true positive rate of 86% at 1% false positive rate, compared to just 6% for diffusion models. We further demonstrate successful dataset inference with as few as 6 samples and extract hundreds of training data points from deployed models.'
 date: 2025-07-13
 venue: 'International Conference on Machine Learning (ICML)'
 paperurl: 'https://arxiv.org/abs/2502.02514'

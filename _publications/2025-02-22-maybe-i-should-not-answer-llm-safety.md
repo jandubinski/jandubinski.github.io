@@ -3,7 +3,7 @@ title: "Maybe I Should Not Answer That, but… Do LLMs Understand The Safety of 
 collection: publications
 category: conferences
 permalink: /publication/2025-02-22-maybe-i-should-not-answer-llm-safety
-excerpt: 'We investigate whether LLMs implicitly encode safety information, introducing a training-free moderation method that levarages the hidden states of an LLM to detect unsafe inputs.'
+excerpt: 'We show that instruction-finetuned LLMs already encode safety-relevant information internally, with safe and unsafe prompts being distinctly separable in the model''s latent space. Building on this, we introduce the Latent Prototype Moderator (LPM), a training-free moderation method that uses Mahalanobis distance in latent space to assess input safety. LPM matches or exceeds state-of-the-art guard models across multiple benchmarks while being a lightweight, customizable add-on that generalizes across model families and sizes.'
 date: 2025-04-28
 venue: 'ICLR Workshop on Building Trust in Language Models and Applications'
 paperurl: 'https://arxiv.org/abs/2502.16174'

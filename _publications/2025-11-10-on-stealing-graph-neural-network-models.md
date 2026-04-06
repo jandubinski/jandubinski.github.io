@@ -3,7 +3,7 @@ title: "On Stealing Graph Neural Network Models"
 collection: publications
 category: conferences
 permalink: /publication/2025-11-10-on-stealing-graph-neural-network-models
-excerpt: 'We demonstrate how an adversary can extract a GNN with very limited interactions, first obtaining the model backbone without direct queries, then strategically utilizing a fixed query limit to extract the most informative data.'
+excerpt: 'Current GNN model-stealing methods rely heavily on queries to the victim model, assuming no hard query limits, but in practice the number of allowed queries can be severely limited. We demonstrate how an adversary can extract a GNN with very limited interactions by first obtaining the model backbone without direct queries, then strategically utilizing a fixed query budget to extract the most informative data. Experiments on eight real-world datasets show the attack is effective even under severe query restrictions and active defenses.'
 date: 2026-01-20
 venue: 'AAAI Conference on Artificial Intelligence (AAAI)'
 paperurl: 'https://arxiv.org/abs/2511.07170'
