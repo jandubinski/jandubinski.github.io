@@ -3,7 +3,7 @@ title: "Backdoor Vectors: a Task Arithmetic View on Backdoor Attacks and Defense
 collection: publications
 category: preprints
 permalink: /publication/2025-10-09-backdoor-vectors-task-arithmetic
-excerpt: 'Model merging is highly susceptible to backdoor attacks that allow adversaries to control the merged model''s output at inference time. We propose treating the attack itself as a task vector — the Backdoor Vector is the weight difference between a backdoored and clean model — revealing new insights into attack similarity and transferability. We introduce Sparse Backdoor Vectors for stronger attacks and Injection BV Subtraction, an assumption-free defense that remains effective even when the threat is unknown.'
+excerpt: 'Model merging is highly susceptible to backdoor attacks that allow adversaries to control the merged model''s output at inference time. We propose treating the attack itself as a task vector: the Backdoor Vector is the weight difference between a backdoored and clean model, revealing new insights into attack similarity and transferability. We introduce Sparse Backdoor Vectors for stronger attacks and Injection BV Subtraction, an assumption-free defense that remains effective even when the threat is unknown.'
 date: 2025-10-09
 venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/abs/2510.08016'
