@@ -133,16 +133,32 @@ span.highlight {
 /* Paper teasers grow on hover (pointer devices only). */
 @media (hover: hover) {
   td.teaser img {
-    transform-origin: left center;
+    --zoom: 1.8;
+    transform-origin: right center;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
 
   td.teaser img:hover {
     position: relative;
     z-index: 10;
-    transform: scale(1.7);
+    /* Grow leftwards into the page margin, away from the text. On windows too
+       narrow for that, shift right just enough to keep the image on screen. */
+    transform: translateX(max(0px, 300px * var(--zoom) - 320px - (100vw - 960px) / 2)) scale(var(--zoom));
     background: #fff;
     box-shadow: 0 6px 28px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Wider windows have more margin to the left of the page, so zoom further. */
+@media (hover: hover) and (min-width: 1500px) {
+  td.teaser img {
+    --zoom: 2.0;
+  }
+}
+
+@media (hover: hover) and (min-width: 1700px) {
+  td.teaser img {
+    --zoom: 2.3;
   }
 }
 
