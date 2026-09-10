@@ -129,3 +129,54 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Small screens: stack table cells vertically instead of side by side. */
+@media (max-width: 640px) {
+  body {
+    margin: 6px;
+  }
+
+  table, tbody, tr, td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  td.bio, td.section, td.paper {
+    padding: 12px 10px !important;
+  }
+
+  td.photo {
+    padding: 0 10px 12px 10px !important;
+    text-align: center;
+  }
+
+  td.photo img {
+    width: 55% !important;
+    max-width: 240px !important;
+  }
+
+  td.teaser {
+    padding: 16px 10px 0 10px !important;
+    text-align: center;
+  }
+
+  td.teaser img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+  }
+
+  td.section ul {
+    padding-left: 20px;
+  }
+
+  name {
+    font-size: 26px;
+  }
+
+  heading {
+    font-size: 20px;
+  }
+}
