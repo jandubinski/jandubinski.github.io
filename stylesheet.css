@@ -130,30 +130,28 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-/* Paper teasers grow on hover (pointer devices only). The image grows
-   leftwards into the page margin; when that runs out, the whole page slides
-   right so the text gets out of the way instead of being covered. */
+/* Paper teasers grow on hover (pointer devices only). Every teaser is 300px
+   wide at rest but their heights differ by a factor of five, so the zoom is
+   capped by height (--target) as well as by width (--zoom-max): each figure
+   grows until it is --target tall or as wide as the window allows. Each paper
+   row carries --fig-h, the height of its teaser at the resting 300px width.
+
+   The figure grows leftwards into the page margin. Once that margin is used
+   up, the figure and the paper text both move right by the same amount, so
+   the gap between them stays put and nothing reflows. */
 @media (hover: hover) {
-  body {
-    --zoom: 1.4;
+  tr {
+    --target: 460;
+    --zoom-max: 1.4;
+    --zoom: min(var(--zoom-max), calc(var(--target) / var(--fig-h)));
     /* Free space next to the 960px page, keeping a 20px gap to the window. */
     --room: max(0px, (100vw - 1000px) / 2);
-    /* How far the image reaches past its resting left edge. */
+    /* How far the figure reaches past the left edge of the page. */
     --reach: max(0px, 300px * var(--zoom) - 320px);
-    /* Growth the left margin cannot absorb. */
+    /* Growth the left margin cannot absorb: the figure moves right by this. */
     --spill: max(0px, var(--reach) - var(--room));
-    /* Slide the page right by the spill, up to the right margin. */
+    /* The text follows, but never far enough to overflow the window. */
     --slide: min(var(--spill), var(--room));
-    /* Anything still left over shifts the image itself (narrow windows only). */
-    --shift: max(0px, var(--spill) - var(--room));
-  }
-
-  body > table {
-    transition: transform 0.2s ease-in-out;
-  }
-
-  body > table:has(td.teaser:hover) {
-    transform: translateX(var(--slide));
   }
 
   td.teaser img {
@@ -164,34 +162,55 @@ span.highlight {
   td.teaser:hover img {
     position: relative;
     z-index: 10;
-    transform: translateX(var(--shift)) scale(var(--zoom));
+    transform: translateX(var(--spill)) scale(var(--zoom));
     background: #fff;
     box-shadow: 0 6px 28px rgba(0, 0, 0, 0.3);
+  }
+
+  td.paper {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  td.teaser:hover + td.paper {
+    transform: translateX(var(--slide));
   }
 }
 
 /* Wider windows have more room on both sides, so zoom further. */
 @media (hover: hover) and (min-width: 1200px) {
-  body {
-    --zoom: 1.7;
+  tr {
+    --zoom-max: 1.7;
   }
 }
 
 @media (hover: hover) and (min-width: 1400px) {
-  body {
-    --zoom: 2.3;
+  tr {
+    --zoom-max: 2.3;
   }
 }
 
 @media (hover: hover) and (min-width: 1600px) {
-  body {
-    --zoom: 2.9;
+  tr {
+    --zoom-max: 2.9;
   }
 }
 
 @media (hover: hover) and (min-width: 1800px) {
-  body {
-    --zoom: 3.3;
+  tr {
+    --zoom-max: 3.3;
+  }
+}
+
+/* Taller windows can fit a taller figure. */
+@media (hover: hover) and (min-height: 900px) {
+  tr {
+    --target: 560;
+  }
+}
+
+@media (hover: hover) and (min-height: 1200px) {
+  tr {
+    --target: 680;
   }
 }
 
