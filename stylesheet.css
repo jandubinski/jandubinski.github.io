@@ -130,35 +130,68 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-/* Paper teasers grow on hover (pointer devices only). */
+/* Paper teasers grow on hover (pointer devices only). The image grows
+   leftwards into the page margin; when that runs out, the whole page slides
+   right so the text gets out of the way instead of being covered. */
 @media (hover: hover) {
+  body {
+    --zoom: 1.4;
+    /* Free space next to the 960px page, keeping a 20px gap to the window. */
+    --room: max(0px, (100vw - 1000px) / 2);
+    /* How far the image reaches past its resting left edge. */
+    --reach: max(0px, 300px * var(--zoom) - 320px);
+    /* Growth the left margin cannot absorb. */
+    --spill: max(0px, var(--reach) - var(--room));
+    /* Slide the page right by the spill, up to the right margin. */
+    --slide: min(var(--spill), var(--room));
+    /* Anything still left over shifts the image itself (narrow windows only). */
+    --shift: max(0px, var(--spill) - var(--room));
+  }
+
+  body > table {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  body > table:has(td.teaser:hover) {
+    transform: translateX(var(--slide));
+  }
+
   td.teaser img {
-    --zoom: 1.8;
     transform-origin: right center;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
 
-  td.teaser img:hover {
+  td.teaser:hover img {
     position: relative;
     z-index: 10;
-    /* Grow leftwards into the page margin, away from the text. On windows too
-       narrow for that, shift right just enough to keep the image on screen. */
-    transform: translateX(max(0px, 300px * var(--zoom) - 320px - (100vw - 960px) / 2)) scale(var(--zoom));
+    transform: translateX(var(--shift)) scale(var(--zoom));
     background: #fff;
     box-shadow: 0 6px 28px rgba(0, 0, 0, 0.3);
   }
 }
 
-/* Wider windows have more margin to the left of the page, so zoom further. */
-@media (hover: hover) and (min-width: 1500px) {
-  td.teaser img {
-    --zoom: 2.0;
+/* Wider windows have more room on both sides, so zoom further. */
+@media (hover: hover) and (min-width: 1200px) {
+  body {
+    --zoom: 1.7;
   }
 }
 
-@media (hover: hover) and (min-width: 1700px) {
-  td.teaser img {
+@media (hover: hover) and (min-width: 1400px) {
+  body {
     --zoom: 2.3;
+  }
+}
+
+@media (hover: hover) and (min-width: 1600px) {
+  body {
+    --zoom: 2.9;
+  }
+}
+
+@media (hover: hover) and (min-width: 1800px) {
+  body {
+    --zoom: 3.3;
   }
 }
 
