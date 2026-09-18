@@ -8,6 +8,11 @@ Plain static site (no Jekyll), based on [Jon Barron's website template](https://
 - `stylesheet.css`: styles
 - `images/<paper>/teaser.png`: Figure 1 of each paper, taken from the arXiv source
 - `files/cv.pdf`: CV
+- `robots.js`, `images/robots/`: misaligned robots cropped from the Truthful AI
+  teasers wander into the page margins; clicking one aligns it (it turns green
+  and disappears). Off on touch devices, narrow windows, and for
+  `prefers-reduced-motion`; the "hide robots" link in the corner switches it
+  off for good via `localStorage`.
 
 Teasers are shown 300px wide and zoom on hover. Each paper row sets
 `--fig-h`, the teaser's height at that 300px width (`300 * height / width` of

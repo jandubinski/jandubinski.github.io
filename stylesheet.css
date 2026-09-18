@@ -214,6 +214,81 @@ span.highlight {
   }
 }
 
+/* Misaligned robots in the page margins (robots.js). The layer itself lets
+   clicks through; only the robots catch them. It sits below hovered teasers. */
+#robots {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.robot {
+  position: absolute;
+  width: 64px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transform-origin: 50% 100%;
+  animation: robot-arrive 0.35s ease-out both, robot-bob 2.6s ease-in-out infinite;
+  transition: filter 0.25s ease-in-out, opacity 0.45s ease-in-out, transform 0.45s ease-in-out;
+}
+
+.robot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.25));
+}
+
+.robot:hover {
+  animation-play-state: paused;
+}
+
+.robot.aligned {
+  animation: none;
+  filter: sepia(1) saturate(4) hue-rotate(70deg);
+}
+
+.robot.gone {
+  opacity: 0;
+  transform: scale(0.6) translateY(12px);
+}
+
+.robot.escaped {
+  animation: none;
+  opacity: 0;
+  transform: translateY(-40px) rotate(8deg);
+}
+
+@keyframes robot-arrive {
+  from { opacity: 0; transform: translateY(20px) scale(0.8); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes robot-bob {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50%      { transform: translateY(-6px) rotate(3deg); }
+}
+
+#robots-score {
+  position: fixed;
+  right: 12px;
+  bottom: 10px;
+  font-size: 12px;
+  color: #999;
+  z-index: 6;
+}
+
+#robots-score a {
+  font-size: 12px;
+  color: #999;
+  text-decoration: underline;
+}
+
 /* Small screens: stack table cells vertically instead of side by side. */
 @media (max-width: 640px) {
   body {
