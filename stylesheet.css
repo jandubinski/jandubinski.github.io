@@ -264,6 +264,46 @@ span.highlight {
   transform: translateY(-40px) rotate(8deg);
 }
 
+/* Nudge shown under a robot that has gone unclicked for a few seconds. It is
+   96px wide, so it stays inside the narrowest margin the game runs in. */
+.robot-hint {
+  position: absolute;
+  top: 100%;
+  left: -16px;
+  width: 96px;
+  margin-top: 2px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #333;
+  text-align: center;
+  animation: robot-hint-in 0.3s ease-out both;
+}
+
+.robot-hint-arrow {
+  display: block;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 700;
+  color: #1772d0;
+  animation: robot-hint-point 0.8s ease-in-out infinite;
+}
+
+.robot.aligned .robot-hint,
+.robot.escaped .robot-hint {
+  display: none;
+}
+
+@keyframes robot-hint-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes robot-hint-point {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+
 @keyframes robot-arrive {
   from { opacity: 0; transform: translateY(20px) scale(0.8); }
   to   { opacity: 1; transform: none; }

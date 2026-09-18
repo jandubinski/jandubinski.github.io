@@ -67,16 +67,30 @@
     el.style.animationDelay = '0s, ' + rand(0, 2).toFixed(2) + 's';
 
     el.addEventListener('click', function () { align(el); });
-    el._life = setTimeout(function () { escape(el); }, rand(9000, 15000));
+    el._hint = setTimeout(function () { hint(el); }, 5000);
+    el._life = setTimeout(function () { escape(el); }, rand(12000, 18000));
     layer.appendChild(el);
     score.hidden = false;
 
     schedule(rand(6000, 12000));
   }
 
+  // A robot that has been ignored for a while gets a nudge pointing at it.
+  function hint(el) {
+    var h = document.createElement('span');
+    h.className = 'robot-hint';
+    var arrow = document.createElement('span');
+    arrow.className = 'robot-hint-arrow';
+    arrow.textContent = '\u2191';
+    h.appendChild(arrow);
+    h.appendChild(document.createTextNode('click to align the AI'));
+    el.appendChild(h);
+  }
+
   function align(el) {
     if (el.classList.contains('aligned')) return;
     clearTimeout(el._life);
+    clearTimeout(el._hint);
     el.classList.add('aligned');
     el.title = 'Aligned.';
     aligned += 1;
@@ -89,6 +103,7 @@
   }
 
   function escape(el) {
+    clearTimeout(el._hint);
     el.classList.add('escaped');
     setTimeout(function () { el.remove(); }, 700);
   }
