@@ -16,10 +16,10 @@
   var MAX = 3;        // robots on screen at once
 
   var ROBOTS = [
-    { src: 'images/robots/value-leakage.png',     paper: 'Value Leakage' },
-    { src: 'images/robots/negation-neglect.png',  paper: 'Negation Neglect' },
-    { src: 'images/robots/conditional-evil.png',  paper: 'Conditional Misalignment' },
-    { src: 'images/robots/conditional-devil.png', paper: 'Conditional Misalignment' }
+    { src: 'images/robots/value-leakage.png',     paper: 'Value Leakage',             id: 'paper-value-leakage' },
+    { src: 'images/robots/negation-neglect.png',  paper: 'Negation Neglect',          id: 'paper-negation-neglect' },
+    { src: 'images/robots/conditional-evil.png',  paper: 'Conditional Misalignment',  id: 'paper-conditional-misalignment' },
+    { src: 'images/robots/conditional-devil.png', paper: 'Conditional Misalignment',  id: 'paper-conditional-misalignment' }
   ];
 
   var layer, score, timer;
@@ -66,6 +66,7 @@
     el.style.top = Math.round(top) + 'px';
     el.style.animationDelay = '0s, ' + rand(0, 2).toFixed(2) + 's';
 
+    el._paper = r.id;
     el.addEventListener('click', function () { align(el); });
     el._hint = setTimeout(function () { hint(el); }, 5000);
     el._life = setTimeout(function () { escape(el); }, rand(12000, 18000));
@@ -87,6 +88,20 @@
     el.appendChild(h);
   }
 
+  function scrollToPaper(id) {
+    var target = document.getElementById(id);
+    if (!target) return;
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    target.classList.remove('paper-flash');
+    // Restart the flash if the same paper is visited twice in a row.
+    void target.offsetWidth;
+    target.classList.add('paper-flash');
+    clearTimeout(target._flash);
+    target._flash = setTimeout(function () {
+      target.classList.remove('paper-flash');
+    }, 1600);
+  }
+
   function align(el) {
     if (el.classList.contains('aligned')) return;
     clearTimeout(el._life);
@@ -96,6 +111,7 @@
     aligned += 1;
     localStorage.setItem('robots-aligned', String(aligned));
     render();
+    scrollToPaper(el._paper);
     setTimeout(function () {
       el.classList.add('gone');
       setTimeout(function () { el.remove(); }, 500);

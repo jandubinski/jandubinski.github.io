@@ -304,6 +304,16 @@ span.highlight {
   50%      { transform: translateY(-5px); }
 }
 
+/* Brief flash when a robot scroll lands on its paper. */
+tr.paper-flash td {
+  animation: paper-flash 1.4s ease-out;
+}
+
+@keyframes paper-flash {
+  0%   { background-color: #ffffd0; }
+  100% { background-color: transparent; }
+}
+
 @keyframes robot-arrive {
   from { opacity: 0; transform: translateY(20px) scale(0.8); }
   to   { opacity: 1; transform: none; }
