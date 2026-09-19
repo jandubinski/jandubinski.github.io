@@ -142,7 +142,7 @@
       Array.prototype.forEach.call(layer.children, escape);
     });
 
-    schedule(rand(3000, 6000));
+    schedule(rand(8000, 11000));
   }
 
   if (document.readyState === 'loading') {
