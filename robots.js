@@ -97,7 +97,7 @@
     arrow.className = 'robot-hint-arrow';
     arrow.textContent = '\u2191';
     h.appendChild(arrow);
-    h.appendChild(document.createTextNode('click to align the AI'));
+    h.appendChild(document.createTextNode('click to align AI'));
     el.appendChild(h);
   }
 
