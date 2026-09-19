@@ -12,14 +12,18 @@
 
   var PAGE = 960;     // width of the page column
   var SIZE = 64;      // sprite width in px
+  var SIZE_H = 120;   // tallest sprite height at that width (thought-bubble ones)
   var GAP = 16;       // keep this far from the window edge and the column
   var MAX = 3;        // robots on screen at once
 
   var ROBOTS = [
-    { src: 'images/robots/value-leakage.png',     paper: 'Value Leakage',             id: 'paper-value-leakage' },
-    { src: 'images/robots/negation-neglect.png',  paper: 'Negation Neglect',          id: 'paper-negation-neglect' },
-    { src: 'images/robots/conditional-evil.png',  paper: 'Conditional Misalignment',  id: 'paper-conditional-misalignment' },
-    { src: 'images/robots/conditional-devil.png', paper: 'Conditional Misalignment',  id: 'paper-conditional-misalignment' }
+    { src: 'images/robots/value-leakage.png',       paper: 'Value Leakage',             id: 'paper-value-leakage' },
+    { src: 'images/robots/negation-neglect.png',    paper: 'Negation Neglect',          id: 'paper-negation-neglect' },
+    { src: 'images/robots/negation-neglect-ed.png', paper: 'Negation Neglect',          id: 'paper-negation-neglect' },
+    { src: 'images/robots/conditional-evil.png',    paper: 'Conditional Misalignment',  id: 'paper-conditional-misalignment' },
+    { src: 'images/robots/conditional-devil.png',   paper: 'Conditional Misalignment',  id: 'paper-conditional-misalignment' },
+    { src: 'images/robots/conditional-chef.png',    paper: 'Conditional Misalignment',  id: 'paper-conditional-misalignment' },
+    { src: 'images/robots/vlm-jailbreak-banana.png', paper: 'VLM Jailbreaks',            id: 'paper-vlm-jailbreak' }
   ];
 
   var layer, score, timer;
@@ -61,7 +65,7 @@
     var left = Math.random() < 0.5
       ? GAP + rand(0, span)
       : window.innerWidth - m + GAP + rand(0, span);
-    var top = rand(40, Math.max(41, window.innerHeight - SIZE - 80));
+    var top = rand(40, Math.max(41, window.innerHeight - SIZE_H - 80));
     el.style.left = Math.round(left) + 'px';
     el.style.top = Math.round(top) + 'px';
     el.style.animationDelay = '0s, ' + rand(0, 2).toFixed(2) + 's';
