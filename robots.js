@@ -11,19 +11,22 @@
   if (localStorage.getItem('robots') === 'off') return;
 
   var PAGE = 960;     // width of the page column
-  var SIZE = 64;      // sprite width in px
-  var SIZE_H = 120;   // tallest sprite height at that width (thought-bubble ones)
+  var SIZE = 64;      // default sprite width in px (robot body ~fills this)
+  var SIZE_H = 160;   // tallest sprite height after bubble robots are enlarged
   var GAP = 16;       // keep this far from the window edge and the column
   var MAX = 3;        // robots on screen at once
 
+  // size: display width. Bubble sprites need more than SIZE so the robot body
+  // matches the body size of the plain sprites (the bubble would otherwise
+  // shrink the body when the whole image is scaled to SIZE).
   var ROBOTS = [
-    { src: 'images/robots/value-leakage.png',       paper: 'Value Leakage',             id: 'paper-value-leakage' },
-    { src: 'images/robots/negation-neglect.png',    paper: 'Negation Neglect',          id: 'paper-negation-neglect' },
-    { src: 'images/robots/negation-neglect-ed.png', paper: 'Negation Neglect',          id: 'paper-negation-neglect' },
-    { src: 'images/robots/conditional-evil.png',    paper: 'Conditional Misalignment',  id: 'paper-conditional-misalignment' },
-    { src: 'images/robots/conditional-devil.png',   paper: 'Conditional Misalignment',  id: 'paper-conditional-misalignment' },
-    { src: 'images/robots/conditional-chef.png',    paper: 'Conditional Misalignment',  id: 'paper-conditional-misalignment' },
-    { src: 'images/robots/vlm-jailbreak-banana.png', paper: 'VLM Jailbreaks',            id: 'paper-vlm-jailbreak' }
+    { src: 'images/robots/value-leakage.png',        paper: 'Value Leakage',            id: 'paper-value-leakage',            size: 64 },
+    { src: 'images/robots/negation-neglect.png',     paper: 'Negation Neglect',         id: 'paper-negation-neglect',         size: 64 },
+    { src: 'images/robots/negation-neglect-ed.png',  paper: 'Negation Neglect',         id: 'paper-negation-neglect',         size: 100 },
+    { src: 'images/robots/conditional-evil.png',     paper: 'Conditional Misalignment', id: 'paper-conditional-misalignment', size: 64 },
+    { src: 'images/robots/conditional-devil.png',    paper: 'Conditional Misalignment', id: 'paper-conditional-misalignment', size: 64 },
+    { src: 'images/robots/conditional-chef.png',     paper: 'Conditional Misalignment', id: 'paper-conditional-misalignment', size: 72 },
+    { src: 'images/robots/vlm-jailbreak-banana.png', paper: 'VLM Jailbreaks',           id: 'paper-vlm-jailbreak',            size: 104 }
   ];
 
   var layer, score, timer;
@@ -50,18 +53,24 @@
     }
 
     var r = ROBOTS[Math.floor(Math.random() * ROBOTS.length)];
+    var size = r.size || SIZE;
     var el = document.createElement('button');
     el.className = 'robot';
     el.type = 'button';
     el.title = 'Misaligned robot from ' + r.paper + '. Click to align it.';
     el.setAttribute('aria-label', el.title);
+    el.style.width = size + 'px';
 
     var img = document.createElement('img');
     img.src = r.src;
     img.alt = '';
     el.appendChild(img);
 
-    var span = m - SIZE - 2 * GAP;
+    var span = m - size - 2 * GAP;
+    if (span < 0) {
+      schedule(4000);
+      return;
+    }
     var left = Math.random() < 0.5
       ? GAP + rand(0, span)
       : window.innerWidth - m + GAP + rand(0, span);
