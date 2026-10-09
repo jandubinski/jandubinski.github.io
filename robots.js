@@ -20,6 +20,11 @@
   // matches the body size of the plain sprites (the bubble would otherwise
   // shrink the body when the whole image is scaled to SIZE).
   var ROBOTS = [
+    { src: 'images/robots/beyond-owls-chess.png',     paper: 'Beyond Owls',              id: 'paper-beyond-owls',              size: 76 },
+    { src: 'images/robots/beyond-owls-stockfish.png', paper: 'Beyond Owls',              id: 'paper-beyond-owls',              size: 188 },
+    { src: 'images/robots/beyond-owls-french.png',    paper: 'Beyond Owls',              id: 'paper-beyond-owls',              size: 91 },
+    { src: 'images/robots/beyond-owls-letters.png',   paper: 'Beyond Owls',              id: 'paper-beyond-owls',              size: 64 },
+    { src: 'images/robots/beyond-owls-mlp.png',       paper: 'Beyond Owls',              id: 'paper-beyond-owls',              size: 66 },
     { src: 'images/robots/value-leakage.png',        paper: 'Value Leakage',            id: 'paper-value-leakage',            size: 64 },
     { src: 'images/robots/negation-neglect.png',     paper: 'Negation Neglect',         id: 'paper-negation-neglect',         size: 64 },
     { src: 'images/robots/negation-neglect-ed.png',  paper: 'Negation Neglect',         id: 'paper-negation-neglect',         size: 100 },
